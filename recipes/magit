@@ -1,7 +1,10 @@
 (magit :fetcher github
        :repo "magit/magit"
-       :files ("lisp/magit*.el"
+       :files ("lisp/magit"
+               "lisp/magit*.el"
                "lisp/git-rebase.el"
                "Documentation/magit.texi"
                "Documentation/AUTHORS.md"
-               "COPYING"))
+               "LICENSE"
+	       (:exclude "lisp/magit-libgit.el"
+			 "lisp/magit-section.el")))
